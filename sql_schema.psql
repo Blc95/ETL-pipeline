@@ -1,0 +1,13 @@
+CREATE TABLE crypto_prices (
+    fetched_at TIMESTAMPTZ NOT NULL,
+    coin_id INTEGER NOT NULL,
+    name TEXT NOT NULL,
+    symbol TEXT NOT NULL,
+    date_added TIMESTAMPTZ NOT NULL,
+    max_supply NUMERIC,
+    price_in_usd NUMERIC NOT NULL,
+    volume_24h NUMERIC NOT NULL,
+    market_cap NUMERIC NOT NULL,
+    market_cap_dominance NUMERIC NOT NULL,
+    PRIMARY KEY (coin_id, fetched_at)
+);
