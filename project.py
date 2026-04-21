@@ -8,6 +8,8 @@ import logging
 from dotenv import load_dotenv
 load_dotenv()
 
+os.makedirs("logs", exist_ok=True)
+
 logging.basicConfig(
     filename="logs/etl.log",
     level=logging.INFO,
