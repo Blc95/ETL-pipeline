@@ -1,5 +1,4 @@
 from requests import Session
-from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 import psycopg2
 import os
 import sys
@@ -148,7 +147,7 @@ def main():
         logging.info("Pipeline completed successfully")
 
     except Exception as e:
-        logging.error(f"Pipeline failed: {e}")
+        logging.exception(f"Pipeline failed: {e}")
         sys.exit(1)
 
     
