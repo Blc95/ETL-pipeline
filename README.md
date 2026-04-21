@@ -1,6 +1,6 @@
 # Crypto ETL Pipeline
 
-#### Video Demo: <PASTE YOUR VIDEO URL HERE>
+#### Video Demo:  https://www.youtube.com/watch?v=6XxWzAthxE4&feature=youtu.be
 
 #### Description:
 
